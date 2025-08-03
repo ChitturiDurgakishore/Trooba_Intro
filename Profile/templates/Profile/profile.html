@@ -1,0 +1,158 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TROOBA - AI Future Solutions</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet" />
+
+  <style>
+    body {
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #d0e8f2;
+      font-family: 'Orbitron', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      padding: 2rem;
+      text-align: center;
+      border-bottom: 1px solid #1a2a3a;
+      box-shadow: 0 0 15px #0ff;
+      background: rgba(15, 32, 39, 0.9);
+    }
+    header h1 {
+      font-weight: 700;
+      font-size: 3rem;
+      letter-spacing: 0.2rem;
+      color: #00f0ff;
+      text-shadow: 0 0 15px #00f0ff;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #68d1d9;
+      margin-top: 0.5rem;
+    }
+    main {
+      flex: 1;
+      padding: 3rem 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .card {
+      background: rgba(15, 32, 39, 0.8);
+      border: none;
+      border-radius: 1rem;
+      box-shadow: 0 0 15px #00f0ff88;
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 30px #00fff0cc;
+    }
+    .card-title {
+      color: #00e5ff;
+      font-weight: 700;
+      font-size: 1.5rem;
+      letter-spacing: 0.05rem;
+    }
+    .card-text {
+      color: #aad8e6;
+      font-size: 1.1rem;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      background: #112233;
+      color: #66e0ffaa;
+      border-top: 1px solid #00e5ff33;
+    }
+    .btn-primary {
+      background-color: #00e5ff;
+      border: none;
+      box-shadow: 0 0 10px #00e5ffcc;
+      transition: background-color 0.3s ease;
+    }
+    .btn-primary:hover {
+      background-color: #00a8cc;
+      box-shadow: 0 0 20px #00a8cccc;
+    }
+    .hero-image, .uploaded-image {
+      max-width: 100%;
+      border-radius: 1rem;
+      box-shadow: 0 0 30px #00f0ffaa;
+      margin-bottom: 2rem;
+      filter: drop-shadow(0 0 10px #00e5ffaa);
+    }
+    .image-section {
+      margin-top: 3rem;
+      text-align: center;
+    }
+    .image-section h2 {
+      color: #00e5ff;
+      margin-bottom: 1rem;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>TROOBA</h1>
+    <p>AI-Powered Solutions for Tomorrow's Challenges</p>
+  </header>
+
+  <main>
+    <div class="text-center mb-5">
+      <img
+        class="hero-image"
+        src="{% static 'Profile/trooba.png' %}"
+        alt="Futuristic AI concept"
+      />
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card p-4 h-100">
+          <h3 class="card-title">Intelligent Automation</h3>
+          <p class="card-text">
+            Harness cutting-edge AI to automate complex workflows, freeing your team to innovate.
+          </p>
+          <a href="#" class="btn btn-primary">Learn More</a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card p-4 h-100">
+          <h3 class="card-title">Predictive Analytics</h3>
+          <p class="card-text">
+            Unlock the power of data-driven predictions to stay ahead in dynamic markets.
+          </p>
+          <a href="#" class="btn btn-primary">Explore</a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card p-4 h-100">
+          <h3 class="card-title">Adaptive Intelligence</h3>
+          <p class="card-text">
+            Experience AI systems that evolve and learn continuously, adapting to your business needs.
+          </p>
+          <a href="#" class="btn btn-primary">Discover</a>
+        </div>
+      </div>
+    </div>
+
+    
+  </main>
+
+  <footer>
+    &copy; 2025 TROOBA AI Solutions. All rights reserved.
+  </footer>
+</body>
+</html>
